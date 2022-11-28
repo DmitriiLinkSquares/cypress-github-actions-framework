@@ -1,4 +1,4 @@
-import { mainMenuButtons, subMenuButtons, urlParts } from '../support/constants'
+import { htmlAttr, mainMenuButtons, subMenuButtons, urlParts } from '../support/constants'
 
 class NavigationMenuComponent {
 
@@ -11,11 +11,11 @@ class NavigationMenuComponent {
   }
 
   openMenuByName(menuName) {
-    this.chevronByMenuName(menuName).invoke('attr', 'ng-reflect-icon').then(icon => {
+    this.chevronByMenuName(menuName).invoke('attr', htmlAttr.NG_REFLECT_ICON).then(icon => {
       if (icon === 'chevron-left-outline') this.menuButtonByName(menuName).click()
     })
     this.chevronByMenuName(menuName)
-      .should('have.attr', 'ng-reflect-icon', 'chevron-down-outline')
+      .should('have.attr', htmlAttr.NG_REFLECT_ICON, 'chevron-down-outline')
   }
 
   goToStepperPage() {

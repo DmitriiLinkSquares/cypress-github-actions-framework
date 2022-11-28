@@ -43,3 +43,6 @@ export const urlParts = {
   SMART_TABLE_PAGE: 'tables/smart-table',
   TREE_GRID_PAGE: 'tables/tree-grid'
 }
+export const htmlAttr = {
+  NG_REFLECT_ICON: 'ng-reflect-icon'
+}
