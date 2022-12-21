@@ -2,7 +2,7 @@ import { navigationMenuComponent } from '../components/NavigationMenuComponent'
 
 describe('Menu buttons tests', () => {
 
-  it('Verify if all menu buttons are clickable', () => {
+  it('Verify if all menu buttons are clickable and opens appropriate page', () => {
     cy.visit('/')
     navigationMenuComponent.goToStepperPage()
     navigationMenuComponent.goToAccordionPage()
@@ -18,3 +18,4 @@ describe('Menu buttons tests', () => {
     navigationMenuComponent.goToTreeGridPage()
   })
 })
+
