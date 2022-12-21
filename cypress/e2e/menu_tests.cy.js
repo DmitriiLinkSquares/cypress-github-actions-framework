@@ -18,5 +18,3 @@ describe('Menu buttons tests', () => {
     navigationMenuComponent.goToTreeGridPage()
   })
 })
-
-
